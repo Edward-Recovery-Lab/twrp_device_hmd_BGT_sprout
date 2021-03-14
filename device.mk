@@ -38,11 +38,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.lito
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.lito \
-    libgptutils \
-    libz \
-    libcutils
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl \
+    android.hardware.boot@1.0-service \
+    android.hardware.boot@1.0-impl-wrapper.recovery \
+    android.hardware.boot@1.0-impl-wrapper \
+    android.hardware.boot@1.0-impl.recovery \
+    bootctrl.$(PRODUCT_PLATFORM) \
+    bootctrl.$(PRODUCT_PLATFORM).recovery \
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
