@@ -77,6 +77,7 @@ TARGET_KERNEL_CONFIG := BGT_sprout_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
