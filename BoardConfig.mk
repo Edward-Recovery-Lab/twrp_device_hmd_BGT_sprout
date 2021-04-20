@@ -77,15 +77,14 @@ TARGET_KERNEL_CONFIG := BGT_sprout_defconfig
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
+
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
-
-# Recovery Configuration
-TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
